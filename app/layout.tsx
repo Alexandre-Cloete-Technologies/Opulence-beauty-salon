@@ -15,8 +15,8 @@ const merriweatherSans = Merriweather_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Opulence Strand",
-  description: "Experience luxury and comfort",
+  title: "Opulence Strand | Luxury Nail Salon in Strand, Cape Town",
+  description: "Experience premium nail care at Opulence Beauty Salon, the only full sea-view luxury nail salon in Strand, Cape Town. Specializing in gel nails, manicures, pedicures, nail art, and waxing with stunning ocean views. Book your appointment today!",
 };
 
 export default function RootLayout({

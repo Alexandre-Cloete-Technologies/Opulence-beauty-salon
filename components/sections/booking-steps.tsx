@@ -3,7 +3,7 @@ export function BookingSteps() {
     {
       number: 1,
       title: "Navigate to Fresha",
-      description: "Click on the 'book appointment' button",
+      description: "Click on the 'Book Appointment' button in the top right",
     },
     {
       number: 2,
@@ -26,7 +26,7 @@ export function BookingSteps() {
           </h2>
         </div>
 
-        <div className="relative flex flex-col md:flex-row justify-center items-start gap-12 lg:gap-24">
+        <div className="relative flex flex-col md:flex-row justify-center items-center gap-12 lg:gap-24">
           {/* Connecting Line (Desktop) */}
           <div className="hidden md:block absolute top-6 left-1/2 -translate-x-1/2 w-[70%] h-0.5 bg-border z-0" />
 
