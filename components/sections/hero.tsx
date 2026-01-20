@@ -1,5 +1,8 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export function Hero() {
   return (
@@ -14,17 +17,32 @@ export function Hero() {
 
       <div className="container relative mx-auto h-full px-4 md:px-8 max-w-7xl flex flex-col justify-center items-center text-center">
         <div className="max-w-3xl space-y-6">
-          <h1 className="text-5xl md:text-7xl font-black tracking-tight text-white leading-tight text-pretty">
+          <motion.h1 
+            className="text-5xl md:text-7xl font-black tracking-tight text-white leading-tight text-pretty"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2, ease: "easeIn" }}
+          >
             A Luxury Nail Salon 
             <br/>
              <span className="italic text-primary">At Your Fingertips</span>
-          </h1>
+          </motion.h1>
           
-          <p className="text-xl md:text-2xl font-medium text-white/90 max-w-xl mx-auto leading-relaxed">
+          <motion.p 
+            className="text-xl md:text-2xl font-medium text-white/90 max-w-xl mx-auto leading-relaxed"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.5, ease: "easeIn" }}
+          >
             Exude opulence with magnificent sea views and plush furnishings providing a serene ambiance for pampering.
-          </p>
+          </motion.p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
+          <motion.div 
+            className="flex flex-col sm:flex-row gap-4 justify-center pt-8"
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 1.8, ease: "easeIn" }}
+          >
             <Button asChild size="lg" className="h-12 px-8 rounded-full bg-primary hover:bg-primary/90 text-white font-bold text-lg shadow-lg active:scale-95 transition-all">
               <Link href="https://www.fresha.com/a/opulence-strand-cape-town-hibernian-tower-beach-road-yqr0r0du">
                 Book Now
@@ -35,7 +53,7 @@ export function Hero() {
                 View Services
               </Link>
             </Button>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

@@ -19,16 +19,16 @@ export function Navbar() {
 
           <div className="hidden md:flex items-center gap-8">
             <Link
+              href="#"
+              className="text-sm font-medium transition-colors hover:text-primary"
+            >
+              Home
+            </Link>
+            <Link
               href="#services"
               className="text-sm font-medium transition-colors hover:text-primary"
             >
-              Services
-            </Link>
-            <Link
-              href="#gallery"
-              className="text-sm font-medium transition-colors hover:text-primary"
-            >
-              Gallery
+              Price List
             </Link>
             <Link
               href="#about"

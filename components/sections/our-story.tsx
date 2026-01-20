@@ -1,5 +1,8 @@
+"use client";
+
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export function OurStory() {
   return (
@@ -9,7 +12,13 @@ export function OurStory() {
           className="relative min-h-[600px] rounded-3xl overflow-hidden bg-cover bg-center flex items-center justify-start p-8 md:p-12 lg:p-16"
           style={{ backgroundImage: "url('/hero-2048x645.jpg')" }}
         >
-          <div className="bg-muted/90 backdrop-blur-sm p-8 md:p-12 rounded-2xl max-w-xl space-y-6 shadow-xl">
+          <motion.div 
+            className="bg-muted/90 backdrop-blur-sm p-8 md:p-12 rounded-2xl max-w-xl space-y-6 shadow-xl"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8, delay: 0.2, ease: "easeInOut" }}
+          >
             <div className="flex items-center gap-3">
               <div className="w-8 h-0.5 bg-primary" />
               <span className="text-sm font-bold tracking-widest uppercase text-primary">
@@ -42,7 +51,7 @@ export function OurStory() {
                 <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

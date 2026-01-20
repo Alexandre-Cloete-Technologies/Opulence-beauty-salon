@@ -29,6 +29,9 @@ export function Testimonials() {
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-foreground">
             What our clients say
           </h2>
+          <p className="text-muted-foreground font-medium flex items-center justify-center gap-2">
+          Over <span className="italic text-primary"> 120 heartwarming reviews</span> on online platforms
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

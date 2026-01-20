@@ -221,7 +221,7 @@ function ServiceCard({ service }: ServiceCardProps) {
   return (
     <div className="flex-1 bg-white rounded-2xl overflow-hidden border border-[#E7CFDB] hover:shadow-lg transition-shadow duration-300 flex flex-col">
       {/* Image Container */}
-      <div className="relative w-full h-56 overflow-hidden bg-gray-100">
+      {/* <div className="relative w-full h-56 overflow-hidden bg-gray-100">
         <Image
           src={service.image}
           alt={service.title}
@@ -229,7 +229,7 @@ function ServiceCard({ service }: ServiceCardProps) {
           className="object-cover"
           sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
         />
-      </div>
+      </div> */}
 
       {/* Content */}
       <div className="p-6 flex flex-col flex-1">
