@@ -3,7 +3,7 @@ export function BookingSteps() {
     {
       number: 1,
       title: "Navigate to Fresha",
-      description: "Click on the “book now” button found on this website or click the button below",
+      description: "Click on the 'book appointment' button",
     },
     {
       number: 2,
@@ -18,7 +18,7 @@ export function BookingSteps() {
   ];
 
   return (
-    <section className="py-20 bg-primary/5">
+    <section className="py-20 bg-white/90">
       <div className="container mx-auto px-4 md:px-8 max-w-7xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-foreground">

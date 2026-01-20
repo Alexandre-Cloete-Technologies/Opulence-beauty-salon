@@ -8,6 +8,7 @@ import { BookingSteps } from "@/components/sections/booking-steps";
 import { Testimonials } from "@/components/sections/testimonials";
 import { CTA } from "@/components/sections/cta";
 import { Footer } from "@/components/sections/footer";
+import { SignatureService2 } from "@/components/sections/signature-service2";
 
 export default function Page() {
   return (
@@ -17,8 +18,9 @@ export default function Page() {
       <PremiumCare />
       <OurStory />
       <SignatureService />
-      <BookingSteps />
       <OurWork />
+      <SignatureService2/>
+      <BookingSteps />
       <Testimonials />
       <CTA />
       <Footer />

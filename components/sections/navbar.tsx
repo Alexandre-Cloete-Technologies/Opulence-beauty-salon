@@ -12,6 +12,8 @@ export function Navbar() {
               src="/opulence-logo-300x49.png" 
               alt="Opulence Strand Logo" 
               className="h-12 w-auto object-contain"
+              width={300}
+              height={49}
             />
           </Link>
 
@@ -20,7 +22,7 @@ export function Navbar() {
               href="#services"
               className="text-sm font-medium transition-colors hover:text-primary"
             >
-              Price List
+              Services
             </Link>
             <Link
               href="#gallery"

@@ -3,11 +3,11 @@ import Link from "next/link";
 
 export function OurStory() {
   return (
-    <section id="about" className="py-20 bg-muted/30">
+    <section id="about" className="py-20 bg-white/80">
       <div className="container mx-auto px-4 md:px-8 max-w-7xl">
         <div 
           className="relative min-h-[600px] rounded-3xl overflow-hidden bg-cover bg-center flex items-center justify-start p-8 md:p-12 lg:p-16"
-          style={{ backgroundImage: "url('https://placehold.co/1440x600')" }}
+          style={{ backgroundImage: "url('/hero-2048x645.jpg')" }}
         >
           <div className="bg-muted/90 backdrop-blur-sm p-8 md:p-12 rounded-2xl max-w-xl space-y-6 shadow-xl">
             <div className="flex items-center gap-3">

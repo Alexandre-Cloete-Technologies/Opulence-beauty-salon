@@ -7,16 +7,17 @@ export function Hero() {
       {/* Background Image with Overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/hero-2048x645.jpg')" }}
+        style={{ backgroundImage: "url('/hero.jpg')", backgroundAttachment: "fixed"   }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/60" />
       </div>
 
       <div className="container relative mx-auto h-full px-4 md:px-8 max-w-7xl flex flex-col justify-center items-center text-center">
         <div className="max-w-3xl space-y-6">
-          <h1 className="text-5xl md:text-7xl font-black tracking-tight text-white leading-tight">
-            A Luxury Nail Salon <br />
-            <span className="italic text-primary">at Your Fingertips</span>
+          <h1 className="text-5xl md:text-7xl font-black tracking-tight text-white leading-tight text-pretty">
+            A Luxury Nail Salon 
+            <br/>
+             <span className="italic text-primary">At Your Fingertips</span>
           </h1>
           
           <p className="text-xl md:text-2xl font-medium text-white/90 max-w-xl mx-auto leading-relaxed">

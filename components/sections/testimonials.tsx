@@ -1,30 +1,29 @@
 import { Star } from "lucide-react";
-import Image from "next/image";
 
 export function Testimonials() {
   const testimonials = [
     {
-      name: "Sarah J.",
-      role: "Regular Client",
-      text: "Absolutely the best nail salon in the city. The attention to detail is unmatched, and my gel mani lasted 4 weeks!",
+      name: "Leanne B.",
+     
+      text: "What an experience! Went for a pedicure and it was absolutely divine and luxurious, I walked out there with brand new feet... not only is the salon beautiful, but the sea view is amazing! The lovely staff are so friendly and you can see they take pride in their work.",
       rating: 5,
     },
     {
-      name: "Emily R.",
-      role: "New Client",
-      text: "The organic pedicure was a dream. The atmosphere is so calming, I almost fell asleep. Highly recommend.",
+      name: "Angelique",
+      
+      text: "Did a 'Queen combo' with Grace , absolutely amazing. The owner was welcoming and offered mimosa when I arrived :) The view of the ocean, while having my treatment done was the cherry on top.",
       rating: 5,
     },
     {
-      name: "Jessica M.",
-      role: "VIP Member",
-      text: "Finally a place that takes hygiene seriously. The autoclave pouches give me such peace of mind. Plus, my nails look fab.",
+      name: "Cayleigh D.",
+      
+      text: "Wow! Such a beautiful place with beautiful people. Primrose was so friendly and fun! She made the experience so memorable. So happy with my nails and nail art!",
       rating: 5,
     },
   ];
 
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 bg-white/90">
       <div className="container mx-auto px-4 md:px-8 max-w-7xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-foreground">
@@ -49,16 +48,12 @@ export function Testimonials() {
               </p>
 
               <div className="flex items-center gap-4 mt-auto">
-                <div className="w-10 h-10 rounded-full bg-muted overflow-hidden">
-                  <Image src={`https://placehold.co/40x40`} alt={t.name} />
-                </div>
+               
                 <div>
                   <h4 className="font-bold text-foreground leading-tight">
                     {t.name}
                   </h4>
-                  <p className="text-xs text-muted-foreground">
-                    {t.role}
-                  </p>
+                  
                 </div>
               </div>
             </div>

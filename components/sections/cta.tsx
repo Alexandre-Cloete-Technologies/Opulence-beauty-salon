@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export function CTA() {
   return (
-    <section className="py-24 bg-primary/10 relative overflow-hidden">
+    <section className="py-24 bg-background relative overflow-hidden">
       {/* Decorative Blur Spheres */}
       <div className="absolute top-0 left-10 w-32 h-32 bg-primary/10 blur-[40px] rounded-full" />
       <div className="absolute bottom-10 right-10 w-48 h-48 bg-violet-500/5 blur-[60px] rounded-full" />

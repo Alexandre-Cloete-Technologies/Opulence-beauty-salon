@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "../ui/button";
 
-export function SignatureService() {
+export function SignatureService2() {
   return (
     <section className="py-20 bg-background relative">
         {/* SVG Background Overlay */}
@@ -18,10 +18,10 @@ export function SignatureService() {
       />
 
       <div className="container mx-auto px-4 md:px-8 max-w-7xl">
-        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
+        <div className="flex flex-col-reverse lg:flex-row-reverse items-center gap-12 lg:gap-24">
           <div className="flex-1 w-full aspect-square relative rounded-[100%_100%_16px_16px] overflow-hidden shadow-2xl">
             <Image 
-              src="/images/opulence-beauty-gel-special.jpg" 
+              src="/images/opulence-beauty-mid-week-promotion.jpg" 
               alt="Gel Queen Combo for Hands & Feet" 
               className="w-full h-full object-cover"
               width={600}
@@ -35,21 +35,20 @@ export function SignatureService() {
                ✩ Specials ✩
               </span>
               <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground leading-tight">
-                Gel Queen Combos for Hands & Feet
+                Mid-Week Promotion
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Treat yourself to the ultimate royal treatment with our Gel Queen Combo, a curated hand and foot ritual designed for lasting glamour and deep relaxation.
+ ONLY APPLICABLE FOR TUESDAY, WEDNESDAY AND THURSDAY
+
               </p>
             </div>
 
             <div className="space-y-4">
               {[
                 "Gel Soak Off",
-                "Glam Pro Rubber Base Gel",
-                "2x Nail Art",
-                "Jelly Soak on Hands",
-                "Scrub",
-                "15 Minute Massage"
+                "Full Gel Overlay",
+                "One Color only - no art included",
+                
               ].map((item, index) => (
                 <div key={index} className="flex items-center gap-3">
                   <div className="flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center">
@@ -61,8 +60,8 @@ export function SignatureService() {
             </div>
 
             <Button asChild size="lg" className="rounded-full bg-primary hover:bg-primary/90 text-white font-bold px-4 py-2 h-auto text-lg shadow-lg active:scale-95 transition-all">
-              <Link href="https://www.fresha.com/a/opulence-strand-cape-town-hibernian-tower-beach-road-yqr0r0du">
-                Book Gel Queen Combo
+              <Link href="https://www.fresha.com/a/opulence-strand-cape-town-hibernian-tower-beach-road-yqr0r0du?service=s%3A21766290">
+                Book Promotion
               </Link>
             </Button>
           </div>

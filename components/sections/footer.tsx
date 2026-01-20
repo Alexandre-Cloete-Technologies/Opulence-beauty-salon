@@ -5,7 +5,18 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <footer className="bg-[#1B0D14] text-white py-16">
+    <footer className="bg-[#1B0D14] text-white py-16 relative">
+       <div 
+        className="absolute inset-0 opacity-5 pointer-events-none blur-[4px]"
+        style={{
+          backgroundImage: 'url(/images/background.svg)',
+          backgroundRepeat: 'repeat',
+          backgroundPosition: 'bottom',
+          backgroundAttachment: 'fixed',
+          
+          backgroundSize: '50vw',
+        }}
+      />
       <div className="container mx-auto px-4 md:px-8 max-w-7xl">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Brand section */}
@@ -14,6 +25,8 @@ export function Footer() {
               <Image 
                 src="/opulence-logo-300x49.png" 
                 alt="Opulence Strand Logo" 
+                width={300}
+                height={49}
                 className="h-10 w-auto object-contain brightness-0 invert"
               />
             </Link>
@@ -89,10 +102,10 @@ export function Footer() {
         </div>
 
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-gray-500 text-xs">
-          <p>© 2026 Alexandre Cloete Technologies. All rights reserved.</p>
+          <p>© 2026 Opulence Beauty. Designed and Developed by Alexandre Cloete Technologies</p>
           <div className="flex gap-6">
-            <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>
-            <Link href="#" className="hover:text-white transition-colors">Terms of Service</Link>
+            {/* <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>
+            <Link href="#" className="hover:text-white transition-colors">Terms of Service</Link> */}
           </div>
         </div>
       </div>
