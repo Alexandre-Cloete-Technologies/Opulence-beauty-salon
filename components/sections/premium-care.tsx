@@ -241,9 +241,7 @@ function ServiceCard({ service }: ServiceCardProps) {
         </p>
         <div className="flex items-center justify-between pt-4 border-t border-[#E7CFDB]">
           <div className="flex flex-col">
-            <span className="text-lg font-bold" style={{ color: 'var(--color-rose-55, #EE2B8C)' }}>
-              {service.price}
-            </span>
+           
             <span className="text-xs" style={{ color: 'var(--color-azure-34, #4B5563)' }}>
               {service.notice}
             </span>
